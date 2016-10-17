@@ -1,3 +1,5 @@
-/*.pdf
-/*.log
+*.pdf
+*.log
+*.dvi
+*.fmt
 .luacheckcache

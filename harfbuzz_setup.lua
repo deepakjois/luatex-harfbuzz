@@ -1,5 +1,5 @@
 -- Allow external Lua modules to be loaded.
-dofile 'package_path_searcher.lua'
+-- dofile 'package_path_searcher.lua'
 
 -- Attach a OpenType font loader to define_font callback.
 require 'ot_font_loader'
