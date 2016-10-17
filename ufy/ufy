@@ -1,0 +1,3 @@
+#!/bin/sh
+export UFY_DIR=`pwd`
+luatex --lua=modules/ufy_pre_init.lua --output-format=pdf --fmt=ufy $1
