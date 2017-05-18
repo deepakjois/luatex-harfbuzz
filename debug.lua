@@ -1,6 +1,3 @@
-local spt = require("serpent")
-
-
 local function dump_fields(n, fields)
     local dump = {}
     for _,v in ipairs(fields) do
@@ -33,6 +30,13 @@ local function show_nodes (head, raw)
   return true
 end
 
+-- Log a message using LuaTeX logging functions.
+--
+-- This function expects the first argument to be a string. If there are
+-- no more arguments, the string is logged onto the terminal as well as
+-- the log file. If there are additional arguments, the string is treated
+-- as a format string, and the log message is constructed using string.format(…)
+-- with the rest of the arguments passed on to it.
 local function log(...)
   local arg = {...}
   if #arg == 1 then
