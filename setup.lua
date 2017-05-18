@@ -47,6 +47,7 @@ local function nodelist_to_table(head)
       item.font = last_font
     else
       item.char = 0xfffc
+      item.script = hb.unicode.script(item.char)
     end
   end
 
