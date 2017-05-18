@@ -1,12 +1,15 @@
 cache = true
-files["./"].globals = {
-  "texio",
-  "fontloader",
+files["spec/"].std = "+busted"
+files["."].globals = {
   "callback",
-  "tex",
+  "font",
+  "fontloader",
   "node",
-  "read_font",
-  "unicode",
-  "font"
+  "pdf",
+  "tex",
+  "texio",
+  "texconfig",
+  "ufy",
+  "unicode"
 }
 
