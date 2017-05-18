@@ -264,7 +264,6 @@ local function shape_runs(runs, text)
       -- FIXME implement setting language as well
       run.buffer:set_direction(run.direction)
 
-      -- FIXME have a fallback for native TeX fonts
       local metrics = font.getfont(run.font)
       local face = hb.Face.new(metrics.filename)
       local hb_font = hb.Font.new(face)
@@ -373,8 +372,7 @@ local function layout_nodes(head)
   elseif head.dir == "TLT" then
     base_dir = 0
   else
-    -- FIXME handle this better, and don’t throw an error.
-    debug.log("Paragraph direction %s unsupported. Bailing!\n", head.dir)
+    debug.log("Paragraph direction %s unsupported right now. Bailing!\n", head.dir)
     return head
   end
 
