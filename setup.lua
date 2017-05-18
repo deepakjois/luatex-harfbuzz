@@ -357,7 +357,6 @@ local function nodetable_to_list(nodetable, runs, dir)
             newhead, current = node.insert_after(newhead,current,n)
           end
         end
-        -- current = node.slide(newhead)
       end
     end
     if dir == "TRT" then run = run.prev else run = run.next end
