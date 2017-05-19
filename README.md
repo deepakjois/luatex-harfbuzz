@@ -12,7 +12,7 @@ Some screenshots:
 
 _noto_urdu.tex_
 
-![noto_urdu.pdf](img/urdu_noto.png)
+![noto_urdu.pdf](img/noto_urdu.png)
 
 _doc.tex_
 ![doc.pdf](img/doc.png)
