@@ -7,3 +7,12 @@ If you encounter any issues, or have further questions, please [file an issue](h
 
 ### Sample PDFs
 Check the [Samples folder](./samples).
+
+Some screenshots:
+
+_noto_urdu.tex_
+
+![noto_urdu.pdf](img/urdu_noto.png)
+
+_doc.tex_
+![doc.pdf](img/doc.png)
