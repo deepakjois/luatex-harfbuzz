@@ -26,7 +26,7 @@ eval $(luarocks path)
 #### Step 3: Install the dependencies from LuaRocks
 
 ```
-luarocks install ufy luabidi luaucdn luaharfbuzz
+luarocks install ufy luabidi luaharfbuzz
 ```
 
 #### Step 4: Run the examples using the script provided
