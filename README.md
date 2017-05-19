@@ -37,7 +37,7 @@ $ ./run.sh doc.tex
 
 This will invoke LuaTeX with the right flags.
 
-### Viewing the code
+### How it works
 Please check out [setup.lua](setup.lua)
 
 ### Sample PDFs
@@ -52,3 +52,7 @@ Check the [Samples folder](./samples).
 
 ### Reporting Bugs/Suggestions
 If you encounter any issues or have any suggestions or questions, please [file an issue](https://github.com/deepakjois/luatex-harfbuzz/issues/new).
+
+### Credits
+
+The BiDi and shaping code is adapted from [libraqm](https://github.com/HOST-Oman/libraqm).
