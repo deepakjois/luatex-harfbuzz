@@ -31,7 +31,7 @@ eval $(luarocks path)
 #### Step 3: Install the dependencies from LuaRocks
 
 ```
-luarocks install ufy luabidi luaharfbuzz
+luarocks install ufylayout
 ```
 
 #### Step 4: Run the examples using the script provided
@@ -43,7 +43,9 @@ $ ./run.sh doc.tex
 This will invoke LuaTeX with the right flags.
 
 ### How it works
-Please check out [setup.lua](setup.lua)
+Please check out [setup.lua](setup.lua) for the callbacks, and [ufylayout] LuaRocks module for the layout code.
+
+[ufylayout]: https://github.com/deepakjois/ufylayout
 
 ### Sample PDFs
 Check the [Samples folder](./samples).
