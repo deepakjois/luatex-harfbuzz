@@ -43,7 +43,7 @@ local function nodelist_to_table(head)
       last_font = item.font
     elseif n.id == node.id("glue") and n.subtype == 13 then -- space skip
       item.char = 0x0020
-      item.script = hb.unicode.script(item.char)
+      item.script = hb.Script.HB_SCRIPT_COMMON
       item.font = last_font
     else
       item.char = 0xfffc
@@ -268,7 +268,7 @@ local function shape_runs(runs, text)
       local face = hb.Face.new(metrics.filename)
       local hb_font = hb.Font.new(face)
 
-      run.buffer:set_cluster_level(hb.Buffer.HB_BUFFER_CLUSTER_LEVEL_CHARACTERS)
+      run.buffer:set_cluster_level(hb.Buffer.HB_BUFFER_CLUSTER_LEVEL_MONOTONE_CHARACTERS)
       -- FIXME implement support for features
       hb.shape(hb_font,run.buffer)
     end
