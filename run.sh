@@ -1,2 +1,2 @@
 #!/bin/sh
-luatex --lua=pre_init.lua --shell-escape $1
+luatex $1

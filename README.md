@@ -43,7 +43,7 @@ $ ./run.sh doc.tex
 This will invoke LuaTeX with the right flags.
 
 ### How it works
-Please check out [setup.lua](setup.lua) for the callbacks, and [ufylayout] LuaRocks module for the layout code.
+Please check out [hbtex.lua](hbtex.lua) for the callbacks, and [ufylayout] LuaRocks module for the layout code.
 
 [ufylayout]: https://github.com/deepakjois/ufylayout
 

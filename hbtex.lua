@@ -1,6 +1,3 @@
--- Use LuaRocks to load packages
-ufy.loader.revert_package_searchers()
-
 local ufylayout = require("ufylayout")
 local debug = require("ufylayout.debug")
 local fonts = require("ufy.fonts")
