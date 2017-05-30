@@ -11,4 +11,29 @@ My name is {\textdir TRT deepak}. Oh wait.
 \pardir TRT
 \textdir TRT
 میرا نام {\textdir TLT deepak} ہے۔ بس۔
+
+\pardir TLT
+\textdir TLT
+
+% from the docs 
+\textdir TRT nur {\textdir TLT run \textdir TRT NUR} nur
+
+\textdir TRT nur {{\textdir TLT run} {\textdir TRT NUR}} nur
+
+
+\def\ltr{\textdir TLT\relax}
+\def\rtl{\textdir TRT\relax}
+
+run {\rtl nur {\ltr run \rtl NUR \ltr run \rtl NUR} nur}
+
+run {\ltr run {\rtl nur \ltr RUN \rtl nur \ltr RUN} run}
+
+
+\def\ltr{\linedir TLT\relax}
+\def\rtl{\linedir TRT\relax}
+
+run {\rtl nur {\ltr run \rtl NUR \ltr run \rtl NUR} nur}
+
+run {\ltr run {\rtl nur \ltr RUN \rtl nur \ltr RUN} run}
+
 \bye
